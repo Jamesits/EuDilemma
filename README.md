@@ -1,6 +1,6 @@
 # EuDilemma
 
-A dilemma for European Union users.
+A [dilemma](dist/EuDilemma.html) for European Union users.
 
 [![](https://data.jsdelivr.com/v1/package/gh/Jamesits/EuDilemma/badge)](https://www.jsdelivr.com/package/gh/Jamesits/EuDilemma)
 
