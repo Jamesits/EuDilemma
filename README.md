@@ -2,6 +2,10 @@
 
 The dilemma for European Union users.
 
+## Compatibility
+
+Compatible with all modern browsers. Should work on older ones too.
+
 ## Usage
 
 Include this in your `<head>`:
@@ -50,3 +54,15 @@ EuDilemma.setBaseUri("https://your.website.tld/assets/");
 ### Customize the appearance
 
 You can always write your own CSS. 
+
+### Pin to a specific version
+
+JsDelivr supports pining the file to a specific release tag.
+
+```html
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Jamesits/EuDilemma@v0.0.1-alpha/dist/EuDilemma.css">
+<script src="https://cdn.jsdelivr.net/gh/Jamesits/EuDilemma@v0.0.1-alpha/dist/EuDilemma.js"></script>
+<script>
+    EuDilemma.setBaseUri("https://cdn.jsdelivr.net/gh/Jamesits/EuDilemma@v0.0.1-alpha/dist/");
+</script>
+```
