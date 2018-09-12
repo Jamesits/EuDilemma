@@ -2,6 +2,8 @@
 
 A dilemma for European Union users.
 
+[![](https://data.jsdelivr.com/v1/package/gh/Jamesits/EuDilemma/badge)](https://www.jsdelivr.com/package/gh/Jamesits/EuDilemma)
+
 ## Compatibility
 
 Compatible with all modern browsers. Should work on older ones too.
