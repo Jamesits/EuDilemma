@@ -1,6 +1,6 @@
 # EuDilemma
 
-The dilemma for European Union users.
+A dilemma for European Union users.
 
 ## Compatibility
 
