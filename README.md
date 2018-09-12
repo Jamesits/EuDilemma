@@ -10,7 +10,7 @@ Compatible with all modern browsers. Should work on older ones too.
 
 ## Quickstart
 
-Include this just after your `<body>`:
+Include this just *after* your `<body>` tag:
 
 ```html
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Jamesits/EuDilemma/dist/EuDilemma.css">
