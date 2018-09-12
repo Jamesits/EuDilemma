@@ -44,7 +44,7 @@ EuDilemma.showDialogIfEu();
 // if force == true, then the dialog will always appear.
 EuDilemma.showDialog(force);
 
-// If the user have the following country code (ISO 2-char)
+// If the user have the following country code (ISO 2-char, uppercase only)
 // This is handy if you are using server-side GeoLocation detection
 // or services like CloudFlare.
 // force means the same as in showDialog.
