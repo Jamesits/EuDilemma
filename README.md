@@ -32,7 +32,7 @@ EuDilemma.setCallback(
 
 // The onReady function you may need
 // Note: don't show dialog if <body> tag is not loaded!
-// It's recommended to wait for document ready.
+// If you load the JS before <body>, it's recommended to wait for document ready.
 EuDilemma.onReady(function);
 
 // If the user is in EU, show the dialog automatically
