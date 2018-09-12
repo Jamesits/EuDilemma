@@ -6,16 +6,17 @@ A dilemma for European Union users.
 
 Compatible with all modern browsers. Should work on older ones too.
 
-## Usage
+## Quickstart
 
-Include this in your `<head>`:
+Include this just after your `<body>`:
 
 ```html
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Jamesits/EuDilemma/dist/EuDilemma.css">
 <script src="https://cdn.jsdelivr.net/gh/Jamesits/EuDilemma/dist/EuDilemma.js"></script>
+<script>EuDilemma.showDialogIfEu();</script>
 ```
 
-Then you can use the APIs.
+If you have a programmable backend, you should get the 2-char country code yourself and call `EuDilemma.showDialog();` when needed, rather using `EuDilemma.showDialogIfEu();`. This saves one API call on the client side.
 
 ### APIs
 
@@ -26,6 +27,11 @@ EuDilemma.setCallback(
     ()=>{console.log("User agreed");}, 
     ()=>{console.log("User disagreed");}
 );
+
+// The onReady function you may need
+// Note: don't show dialog if <body> tag is not loaded!
+// It's recommended to wait for document ready.
+EuDilemma.onReady(function);
 
 // If the user is in EU, show the dialog automatically
 // Note: country detection requires ip.sb GeoLocation API.

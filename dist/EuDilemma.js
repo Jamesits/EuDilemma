@@ -128,8 +128,24 @@ var EuDilemma = (function() {
         callback_red = r;
     };
 
+    var onReady = function(fn) {
+        if (document.readyState != 'loading'){
+            fn();
+        } else if (document.addEventListener) {
+            document.addEventListener('DOMContentLoaded', fn);
+        } else {
+            document.attachEvent('onreadystatechange', function() {
+            if (document.readyState != 'loading')
+                fn();
+            });
+        }
+    }
+
     // main logic
     var body = document.getElementsByTagName('body')[0];
+    if (!body) onReady(function(){
+        body = document.getElementsByTagName('body')[0];
+    });
     if (getPreviousCookie() == "blue") {
         hidePageContent();
     } else if (getPreviousCookie() == "red") {
@@ -146,5 +162,6 @@ var EuDilemma = (function() {
         dialogActionBlue: dialogActionBlue,
         dialogActionRed: dialogActionRed,
         setCallback: setCallback,
+        onReady: onReady,
     };
 })();
