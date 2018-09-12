@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <title>EuDilemma Test Page</title>
+        <link rel="stylesheet" type="text/css" href="../dist/EuDilemma.css">
+    </head>
+    <body>
+        <p>The website's normal content</p>
+        <p>The overlay dialog should pop up automatically in Europe. If not, you can force trigger it:</p>
+        <button onclick="EuDilemma.showDialog()">Show Dialog</button>
+        <p>If you have already made a choice, clear cookies to have another choice.</p>
+        <script src="../dist/EuDilemma.js"></script>
+        <script>
+            EuDilemma.setBaseUri("../dist/");
+            EuDilemma.setCallback(()=>{console.log("User agreed");}, ()=>{console.log("User disagreed");});
+            EuDilemma.showDialogIfEu();
+        </script>
+    </body>
+</html>
