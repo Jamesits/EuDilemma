@@ -18,9 +18,13 @@ Include this just **after** your `<body>` tag:
 <script>EuDilemma.showDialogIfEu();</script>
 ```
 
-If you have a programmable backend, you should get the 2-char country code yourself and call `EuDilemma.showDialog();` when needed, rather using `EuDilemma.showDialogIfEu();`. This saves one API call on the client side.
+If you have a programmable backend or using services like GloudFlare IP Geolocation, you should get the 2-char country code yourself and call `EuDilemma.showDialogIfCountryCodeIs` or `EuDilemma.showDialog` when needed, rather using `EuDilemma.showDialogIfEu`. This saves one API call on the client side.
 
-### APIs
+## Caveats
+
+* It does not detect proxy or VPN.
+
+## APIs
 
 ```javascript
 // get what your user have choosen
@@ -59,13 +63,13 @@ EuDilemma.asyncIfEu(then_func, else_func, failure_func);
 EuDilemma.setBaseUri("https://your.website.tld/assets/");
 ```
 
-### Customize the appearance
+## Customize the appearance
 
-You can always write your own CSS. 
+You can always write your own CSS. You don't need to include the CSS we provided, but it is a good start point.
 
-### Pin to a specific version
+## Pin to a specific version
 
-JsDelivr supports pining the file to a specific release tag.
+jsDelivr supports pining the file to a specific release tag.
 
 ```html
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Jamesits/EuDilemma@v0.0.6-alpha/dist/EuDilemma.css">
