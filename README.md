@@ -68,9 +68,9 @@ You can always write your own CSS.
 JsDelivr supports pining the file to a specific release tag.
 
 ```html
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Jamesits/EuDilemma@v0.0.5-alpha/dist/EuDilemma.css">
-<script src="https://cdn.jsdelivr.net/gh/Jamesits/EuDilemma@v0.0.5-alpha/dist/EuDilemma.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Jamesits/EuDilemma@v0.0.6-alpha/dist/EuDilemma.css">
+<script src="https://cdn.jsdelivr.net/gh/Jamesits/EuDilemma@v0.0.6-alpha/dist/EuDilemma.js"></script>
 <script>
-    EuDilemma.setBaseUri("https://cdn.jsdelivr.net/gh/Jamesits/EuDilemma@v0.0.5-alpha/dist/");
+    EuDilemma.setBaseUri("https://cdn.jsdelivr.net/gh/Jamesits/EuDilemma@v0.0.6-alpha/dist/");
 </script>
 ```
