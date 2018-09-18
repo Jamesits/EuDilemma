@@ -18,7 +18,7 @@ Include this just **after** your `<body>` tag:
 <script>EuDilemma.showDialogIfEu();</script>
 ```
 
-If you have a programmable backend or using services like GloudFlare IP Geolocation, you should get the 2-char country code yourself and call `EuDilemma.showDialogIfCountryCodeIs` or `EuDilemma.showDialog` when needed, rather using `EuDilemma.showDialogIfEu`. This saves one API call on the client side.
+If you have a programmable backend or using services like CloudFlare IP Geolocation, you should get the 2-char country code yourself and call `EuDilemma.showDialogIfCountryCodeIs` or `EuDilemma.showDialog` when needed, rather using `EuDilemma.showDialogIfEu`. This saves one API call on the client side.
 
 ## Caveats
 
